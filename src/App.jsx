@@ -39,11 +39,9 @@ const fetchData =async ()=>{
    <>
       <Nav/>
 
-      <div className='bg-[#F5D7DB]'>
-        <Filter filtdata={filtdata} catagory={catagory} setCatagory={setCatagory}/>
+      <Filter filtdata={filtdata} catagory={catagory} setCatagory={setCatagory}/>
 
-        { loading ? (<Spinner/>): (<Cards courses={courses} catagory={catagory} setCatagory={setCatagory}/>)}
-      </div>
+      { loading ? (<Spinner/>): (<Cards courses={courses} catagory={catagory} setCatagory={setCatagory}/>)}
    </>
   )
 }
